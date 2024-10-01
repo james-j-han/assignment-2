@@ -1,0 +1,80 @@
+body {
+	font-family: 'Verdana', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.background {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('background.png');
+	background-repeat: repeat;
+	position: relative;
+	z-index: 1;
+}
+
+.banner {
+	background-image: url('banner.png');
+	background-repeat: no-repeat;
+	width: 974px;
+	height: 50px;
+/*	center banner*/
+	display: flex;
+	justify-content: center;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 3;
+}
+
+.banner-background {
+	background-image: url(bannerbackground.png);
+	width: 100vw;
+	height: 50px;
+	position: absolute;
+	z-index: 2;
+}
+
+.movie-title {
+	top: 70px;
+	width: 100%;
+	font-size: 24pt;
+	font-weight: bold;
+	margin: 0 auto 0;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+.main-content {
+	width: 800px;
+	height: auto;
+/*	top horizontal bottom*/
+	margin: 90px auto 0;
+	border: 4px solid gray;
+	position: relative;
+	z-index: 2;
+}
+
+.rotten-rating {
+	width: 550px;
+	height: auto;
+	background-image: url('rottenbackground.png');
+	background-repeat: repeat-x;
+	position: relative;
+	z-index: 2;
+	display: flex-start;
+	flex-direction: row;
+	align-items: center;
+}
+
+.rating {
+	font-size: 48pt;
+	font-weight: bold;
+	color: red;
+}
+
+.total-reviews {
+	font-size: 8pt;
+	color: white;
+}
