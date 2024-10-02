@@ -46,8 +46,9 @@ body {
 	z-index: 2;
 }
 
-.main-content {
+.main-container {
 	display: flex;
+	flex-direction: column;
 	width: 800px;
 	height: auto;
 /*	top horizontal bottom*/
@@ -57,7 +58,19 @@ body {
 	z-index: 2;
 }
 
-.rotten-rating {
+.main-content {
+	display: flex;
+	flex-direction: row;
+/*	width: 800px;*/
+	height: auto;
+/*	top horizontal bottom*/
+/*	margin: 90px auto 0;*/
+/*	border: 4px solid gray;*/
+	position: relative;
+	z-index: 2;
+}
+
+.rotten-banner {
 	width: 550px;
 	height: auto;
 	background-image: url('rottenbackground.png');
@@ -69,6 +82,12 @@ body {
 	align-items: center;
 }
 
+.rotten-rating {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
 .rating {
 	font-size: 48pt;
 	font-weight: bold;
@@ -78,10 +97,12 @@ body {
 .total-reviews {
 	font-size: 8pt;
 	color: white;
+	margin-bottom: 10px;
 }
 
 .reviews-container {
 	display: flex;
+	margin-top: 2%;
 }
 
 .review-column {
@@ -173,6 +194,13 @@ a {
 .review-bar {
 	background-color: #A2B964;
 	text-align: center;
-	width: 100%;
-	clear: both;
+	width: auto;
+	padding: 5px;
+	font-size: 8pt;
+}
+
+.validator-links {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
 }
